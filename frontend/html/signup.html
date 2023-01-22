@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+      /* Write all necessery css here  */
+      h1{
+      text-align: center;
+    }
+   body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: white;
+        margin: auto;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 5px;
+        padding: 20px;
+        
+    }
+
+    form {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    input {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        align-items: center;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(80, 104, 116, 0.891) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        background-color: green;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 20px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 20px 25px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:active,
+    input[type="submit"]:hover {
+        outline: 0;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      font-size: xx-large;
+      color: none;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+    
+        <div class="nav">
+            
+            <a href="./signin.html">Signin</a>
+            <a style="border: 2px solid ;border-color: white white red white;"href="./signup.html">Signup</a>
+            <a href="./adminlogin.html">Admin</a>
+          </div>
+          <div id="signup">
+            <h1>Please Enter Your Details</h1>
+            <form>
+                <h3>ENTER YOUR NAME</h3>
+              <input type="text" id="name" placeholder="Enter Name">
+              <h3>ENTER YOUR EMAIL</h3>
+              <input type="email" id="email" placeholder="Enter Email">
+              <h3>ENTER YOUR MOBILE NUMBER</h3>
+              <input type="number" id="number" placeholder="Enter Mobile Number">
+              <h3>ENTER YOUR PASSWORD</h3>
+              <input type="password"  id="password" placeholder="Enter Password">
+              <input type="submit" value="SIGNUP" />
+            </form>
+          </div>
+
+  
+</body>
+<script>
+  let users=JSON.parse(localStorage.getItem("usersData")) || [];
+let count=0;
+let press=document.querySelector("form");
+press.addEventListener("submit",function(){
+  let Details={
+    Name : press.name.value,
+    Email : press.email.value,
+    Password : press.password.value
+  }
+  users.push(Details)
+  localStorage.setItem("usersData", JSON.stringify(users) );
+  window.location.href="signin.html"
+});
+
+</script>
+
+</html>

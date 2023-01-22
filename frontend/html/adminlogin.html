@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin login</title>
+    <style>
+             h1{
+      text-align: center;
+    }
+   body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: white;
+        margin: auto;
+        background-color: whitesmoke;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    input {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        align-items: center;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(80, 104, 116, 0.891) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        background-color: green;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 20px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 20px 25px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:active,
+    input[type="submit"]:hover {
+        outline: 0;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      font-size: xx-large;
+      color: none;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #heading{
+        margin: auto;
+    }
+    #input1{
+        width:450px;
+    }
+    #input2{
+        width:450px;
+    }
+    #input3{
+        width:450px;
+    }
+    #adminbtn{
+        /* margin-left: 10px; */
+        font-family: Phantomsans, sans-serif;
+        font-size: 20px;
+        color: white;
+        box-shadow: rgba(80, 104, 116, 0.891) 0 15px 30px -5px;
+        border: none;
+        border-radius: 8px;
+        background-color:green ;
+        width: 470px;
+        height: 60px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="signup.html">Signup</a>
+      <a style="border: 2px solid ;border-color: white white red white;"href="./adminlogin.html">Admin</a>
+      <a href="signin.html">Signin</a>
+      
+    </div>
+    <div id="signin">
+      <h1 id="heading">Please Enter Your Details</h1>
+      
+        <h3>ENTER YOUR EMAIL</h3>
+        <input id="input1"type="email" id="email" placeholder="Enter Email">
+        <h3>ENTER YOUR ADMIN ID</h3>
+        <input id="input2"type="text" id="admin" placeholder="Enter Admin Id">
+        <h3>ENTER YOUR PASSWORD</h3>
+        <input  id="input3"type="password"  id="password" placeholder="Enter Password"><br> 
+        <button id="adminbtn"onclick="done()">ADMIN LOGIN</button>
+        
+      
+    </div>
+  </body>
+  <script>
+    function done(){
+        let emal=document.querySelector("#input1").value;
+        let admin=document.querySelector("#input2").value;
+        let pass=document.querySelector("#input3").value;
+        if(emal=="admin@gmail.com" && admin=="admin1" && pass=="admin@1"){
+            window.location.href="admin.html"
+        }else{
+            document.querySelector("#heading").innerText = "Wrong Credentials"
+        }
+    }
+  </script>
+</html>

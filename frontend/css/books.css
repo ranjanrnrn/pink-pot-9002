@@ -1,0 +1,66 @@
+#thebookstore{
+    text-align: center;
+}
+
+#container{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+#left-div{
+    border: 1px solid;
+    border-color: white rgb(141, 141, 141) white white;
+    width: 15%;
+}
+#right-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    margin: auto;  
+    gap: 30px;
+    width: 75%;
+}
+#right-div>div{
+    padding-top: 5px;
+    text-align: center;
+}
+#right-div>div:hover{
+    
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+#right-div>div>img{
+    width: 70%;
+    height: 60%;
+}
+#right-div>div>h6{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.ptag{
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+.cart-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffcd9e;
+}
+
+#loadmorediv{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+#loadmorebtn{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+#loadmorebtn:hover{
+    background-color:#ffcd9e ;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/books.css">
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="navup">
+        <h5>BUY ONE, GET ONE 50% OFF JIGSAW PUZZLES</h5>
+    </div>
+
+    <!------------------- navbar starts here ------------------->
+
+
+    <div id="navbar">
+        <!-- section-1 -->
+        <div id="navsec1">
+            <div id="left">
+                <button class="navbtn">STORES & EVENTS</button>
+                <h4>|</h4>
+                <button class="navbtn">BLOG & PODCAST</button>
+                <h4>|</h4>
+                <button class="navbtn">MEMBERSHIP</button>
+                <h4>|</h4>
+                <button class="navbtn">COUPONS & DEALS</button>
+                <h4>|</h4>
+                <button class="navbtn">BESTSELLERS</button>
+                <h4>|</h4>
+                <button class="navbtn">GIFT CARDS</button>
+            </div>
+            <div id="right">
+                <a href="signup.html"><img id="loginlogo"src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-2 -->
+        <div id="navsec2">
+            <div id="logo">
+                <a href="./index.html"><img id="logoimg"src="https://dl.dropboxusercontent.com/s/ib9xpbeh5p8hnpx/book%20store%20logo11.png?dl=0" alt="BOOKSTORE.COM"></a>
+            </div>
+            <div id="searchinput">
+                <input oninput="search()"id="search" placeholder="Search" name="search">
+                <button id="searchlogo">
+                    <svg id="svg"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
+            <div id="cartlogo">
+                <a href="cart.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAY1BMVEX///8AAADh4eFxcXFubm4wMDCoqKi4uLjQ0NCSkpL29vbBwcHv7+/s7OzJycn8/Pw1NTWenp6MjIwpKSl3d3dnZ2eYmJiysrIdHR3W1tZISEhdXV0XFxdPT08SEhJ/f389PT02yF6tAAAET0lEQVRoge1b2ZaiMBAFVJBdRFa19f+/cvpUwShUJSRNiHPm9H2zi8kl4aa2ZBznF/83vNr3PkB7dL+x73LbvL0LuAeWmd0RbZ3Y5K3cFy4WP3RSvhG7fWCPOb6+M3/59pi7yztzZY/YSevTi7iwSOxEQf+XOLJJ/O1Cqi/kzezyfvtM/NC1bV7HA96ddd4EVvpk+QM7To57ObXN6zyAN7bO2wDv2TqvZ91lIaIbCMt6GuCgsKrdZrjwadXZ3R6cfAILvO6F8no2eLkIYIV3T3mr5X+1HjfKW4Oh8LYCJhiUN4a/Pzitm4AHDqKnhsQVGMwgg+G5nQSGcquQhJ+RS5fRY3Ub8YpHxzdqNuLFMoHz/ygsxqWYALqlE2dKwXTYhle2W8DUbiMs2UdEj8Um0bGvjIYNd71EtD7YuPrsruUMuSwN15LPV3FrM6670aLlnCHKSuCUUFglNejmBHS3YHQXpY0HsFJhaeYErejNRWnyHqyMsPRiJKMemaxkwjoG6uDEAwMfRGUQCmuDJBpldReZ0xbs5nlxQ4RC+xPs5vtZclk5zmXB/lOgrMRdMlwP82U/DPsUV9cdPHA1Tbs4bFpuIix/cRnvmwjrIfJHsyc4YUVHJUiCoKz5Gog2mrKLvlP15GDoZU0bT6CAVJWWCzooK6kbTDAkkUCWqfPS3K2Av8u7n5jmkk+hUaXS5ht6o6OUFz0aTeuVQ39J3jlHWcnzRcw3mcQgq0MV+HR41MZd3rIRCWsF4MRoqR6IQFg3k41KlNXSMULFC2sFMHtaqvdQQAarswhltbSCxst+JVmNj13NNQwztYkMwjJXnYVKsnKcnZIM1CHwgASG+0kd5orL76cRAtQhTJ1fSLbgVWnkl8vDaEPFD+3M0yqdWxTGadUScowf5WVvBo9C0RcMaZjawyYBwmrtX+7AfMj6oexQVlg9/QagsOyfnaGwNmpUygDC+rIvrOX6bRvo9gWluKqvW2eSV9y2ojgtj6YB9Q92/BCvE9zM0Ur6OBRp+DyYQaWbmuZGoEn6i88gzeI4W+qneXEcm7yRmQc97Kv2KtmKSY29oNLY7UTvdSPNrURzDtrXQ7WROU8LF9qvAYSThyoDfYp5kCi5Gc9z7vWnqtFz7veYAzUawFY3KsaZVI0/nhLSztt4A/TRhK1kVTSQY0g8gJMdwhTpbnXvC1EYmfBAFb0TkLsHWKqPNe6Zfzk9zE5++NsB18nyYzqqFf0ocCp/3QUu4rwfP2slPNlF2Z4X3MzK+mpWs+xZQd+nqw+/Vt7FHJzV8Au7tWQq58m+9icq+yGGxj/279IDL9Xh5Qr64+d4DH6gyOKx506OefLBp12bLBi7I2sbfulwR/mFnkabeP6M5MxVFWRMTqiP5XfThj8dkg39+bT5ZOZicfy21CfRtqzfaHeGjgmSMwrZfRbi9evG2+qyZEibufPDsOnk80izIqzjT/wnn1/8K/gDrbg54Fpq2DMAAAAASUVORK5CYII=" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-3 -->
+
+        <div id="navsec3">
+            <a href="./books.html"><button class="navbtn2">Books</button></a>
+            <h4>|</h4>
+            <a href="./fiction.html"><button class="navbtn2">Fiction</button></a>
+            <h4>|</h4>
+            <a href="./nonfiction.html"><button class="navbtn2">Nonfiction</button></a>
+            <h4>|</h4>
+            <a href="./ebooks.html"><button class="navbtn2">eBooks</button></a>
+            <h4>|</h4>
+            <a href="./audiobooks.html"><button class="navbtn2">Audiobooks</button></a>
+            <h4>|</h4>
+            <a href="./teens&ya.html"><button class="navbtn2">Teens & YA</button></a>
+            <h4>|</h4>
+            <a href="./kids.html"><button class="navbtn2">Kids</button></a>
+            <h4>|</h4>
+            <a href="./toys &games.html"><button class="navbtn2">Toys & Games</button></a>
+            <h4>|</h4>
+            <a href="./Stationery & Gifts.html"><button class="navbtn2">Stationery & Gifts</button></a>
+            <h4>|</h4>
+            <a href=""><button class="navbtn2">Music & Movies</button></a>
+        </div>
+
+    </div>
+    <!------------------- navbar ends here ------------------->
+    <div id="offer1">
+        <h5>Get a $10 eGift Card When You Spend $50 or More* | With Code: Take10</h5>
+    </div>
+    <div id="offer2">
+        <h5>50% Off Thousand of Hardcover Books &  More Deals - Online & In Stores </h5>
+    </div>
+
+    <div id="thebookstore">
+        <h1 class="fnstyle">Audiobooks</h1>
+        <p>Shop audiobooks online with an audiobooks subscription or purchase any book, any time.</p>
+    </div>
+
+    <div id="container">
+        <div id="left-div">
+            <div >
+                <p style="color: green;">SPECIAL COLLECTIONS</p>
+                <p>The Best Books of 2022</p>
+                <p>B&N Book of the Year</p>
+                <p>Our Monthly Picks</p>
+                <p>Book Club Selections</p>
+                <p>Bookseller Favorites</p>
+                <p>B&N Discover Prize</p>
+                <p>The Paperback Store</p>
+                <p>Boxed Sets</p>
+                <p>Signed Books</p>
+            </div>
+            <div style="margin-top: 50px;">
+                <p style="color: rgb(1, 168, 1);">CUSTOMER FAVORITES</p>
+                <p>B&N Top 100</p>
+                <p>Teens & YA Top 100</p>
+                <p>Kids Top 100</p>
+                <p>NY Times® Bestsellers</p>
+                <p>New Releases</p>
+                <p>Coming Soon</p>
+                <p>Books by Subject</p>
+            </div>
+            <div style="margin-top: 50px;">
+                <p style="color: rgb(1, 168, 1);">CUSTOMER FAVORITES</p>
+                <p>B&N Top 100</p>
+                <p>Teens & YA Top 100</p>
+                <p>Kids Top 100</p>
+                <p>NY Times® Bestsellers</p>
+                <p>New Releases</p>
+                <p>Coming Soon</p>
+                <p>Books by Subject</p>
+            </div>
+            <div style="margin-top: 50px;">
+                <p style="color: green;">SPECIAL VALUES</p>
+                <p>50% Off Thousands Books</p>
+                <p>Buy 1, Get 1 50% Off</p>
+                <p>Bestsellers 30% Off</p>
+                <p>Up to 30% Off Pre-Orders</p>
+                <p>Book Annex</p>
+                <p>B&N Collectible Editions</p>
+                <p>Coupons & Deals</p>
+            </div>
+            
+            
+            
+        </div>
+        <div id="right-div">
+        </div>
+    </div>
+    <div id="loadmorediv">
+        <button id="loadmorebtn">LOAD MORE</button>
+    </div>
+
+    <div id="footer1">
+        <img id="footer1img"src="./image/footer-1.png" alt="">
+      </div>
+      <div id="footer1">
+        <img id="footer1img"src="./image/footer-2.png" alt="">
+      </div>
+</body>
+
+
+</html>
+<script src="/frontend/js/fiction.js"></script>

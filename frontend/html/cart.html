@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-Page</title>
+    <link rel="stylesheet" href="sales.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .cartcont {
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .cartcont>div {
+        display: flex;
+        margin: 20px auto;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .cartcont>div>div:nth-child(1) {
+        width: 40%;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    .cartcont>div>div:nth-child(1)>img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .cartcont>div>div:nth-child(1)>img:hover {
+        cursor: zoom-in;
+    }
+
+    .cartcont>div>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .cartcont>div>div:nth-child(2)>h2,
+    .cartcont>div>div:nth-child(2)>p {
+        margin-bottom: 0px;
+    }
+
+    .cartcont>div>div:nth-child(2)>p~h2 {
+        margin-bottom: 10px;
+    }
+
+    .cartcont>div>div:nth-child(2)>button {
+        width: 60%;
+        margin: 20px 0;
+        font-size: 16px;
+        padding: 8px;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+    .cartcont>div>div:nth-child(2)>button:hover{
+        color: white;
+        background-color: black;
+    }
+
+    .cartcont>div>div:nth-child(2)>div {
+        width: 100px;
+        display: flex;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cartcont>div>div:nth-child(2)>div>button {
+        font-size: 20px;
+        border:1px solid rgb(42, 42, 42);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 5px 10px 5px 10px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    .cartcont>div>div:nth-child(2)>div>button:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .carttotal {
+        margin: auto;
+        margin-top: 120px;
+        text-align: center;
+        padding: 5px 15px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 40%;
+        background-color: white;
+        color: black;
+    }
+
+    .cart-empty {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .cart-empty img{
+        width: 80%;
+    }
+
+    .hide-div {
+        display: none;
+    }
+
+    .cartcont img {
+        object-fit: contain;
+    }
+    #buynow{
+        text-align: center;
+        width: 100%;
+        margin:auto
+    }
+    #buynowbtn{
+        font-size: 30px;
+        height: 60px;
+        width: 20%;
+        margin-top: 30px;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+    }
+    #buynowbtn:hover{
+        color: white;
+        background-color: black;
+    }
+    
+</style>
+
+<body>
+    <div id="navup">
+        <h5>BUY ONE, GET ONE 50% OFF JIGSAW PUZZLES</h5>
+    </div>
+
+    <!------------------- navbar starts here ------------------->
+
+
+    <div id="navbar">
+        <!-- section-1 -->
+        <div id="navsec1">
+            <div id="left">
+                <button class="navbtn">STORES & EVENTS</button>
+                <h4>|</h4>
+                <button class="navbtn">BLOG & PODCAST</button>
+                <h4>|</h4>
+                <button class="navbtn">MEMBERSHIP</button>
+                <h4>|</h4>
+                <button class="navbtn">COUPONS & DEALS</button>
+                <h4>|</h4>
+                <button class="navbtn">BESTSELLERS</button>
+                <h4>|</h4>
+                <button class="navbtn">GIFT CARDS</button>
+            </div>
+            <div id="right">
+                <a href="login.html"><img id="loginlogo"src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-2 -->
+        <div id="navsec2">
+            <div id="logo">
+                <a href="./index.html"><img id="logoimg"src="https://dl.dropboxusercontent.com/s/ib9xpbeh5p8hnpx/book%20store%20logo11.png?dl=0" alt="BOOKSTORE.COM"></a>
+            </div>
+            <div id="searchinput">
+                <input oninput="search()"id="search" placeholder="Search" name="search">
+                <button id="searchlogo">
+                    <svg id="svg"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
+            <div id="cartlogo">
+                <a href="cart.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAY1BMVEX///8AAADh4eFxcXFubm4wMDCoqKi4uLjQ0NCSkpL29vbBwcHv7+/s7OzJycn8/Pw1NTWenp6MjIwpKSl3d3dnZ2eYmJiysrIdHR3W1tZISEhdXV0XFxdPT08SEhJ/f389PT02yF6tAAAET0lEQVRoge1b2ZaiMBAFVJBdRFa19f+/cvpUwShUJSRNiHPm9H2zi8kl4aa2ZBznF/83vNr3PkB7dL+x73LbvL0LuAeWmd0RbZ3Y5K3cFy4WP3RSvhG7fWCPOb6+M3/59pi7yztzZY/YSevTi7iwSOxEQf+XOLJJ/O1Cqi/kzezyfvtM/NC1bV7HA96ddd4EVvpk+QM7To57ObXN6zyAN7bO2wDv2TqvZ91lIaIbCMt6GuCgsKrdZrjwadXZ3R6cfAILvO6F8no2eLkIYIV3T3mr5X+1HjfKW4Oh8LYCJhiUN4a/Pzitm4AHDqKnhsQVGMwgg+G5nQSGcquQhJ+RS5fRY3Ub8YpHxzdqNuLFMoHz/ygsxqWYALqlE2dKwXTYhle2W8DUbiMs2UdEj8Um0bGvjIYNd71EtD7YuPrsruUMuSwN15LPV3FrM6670aLlnCHKSuCUUFglNejmBHS3YHQXpY0HsFJhaeYErejNRWnyHqyMsPRiJKMemaxkwjoG6uDEAwMfRGUQCmuDJBpldReZ0xbs5nlxQ4RC+xPs5vtZclk5zmXB/lOgrMRdMlwP82U/DPsUV9cdPHA1Tbs4bFpuIix/cRnvmwjrIfJHsyc4YUVHJUiCoKz5Gog2mrKLvlP15GDoZU0bT6CAVJWWCzooK6kbTDAkkUCWqfPS3K2Av8u7n5jmkk+hUaXS5ht6o6OUFz0aTeuVQ39J3jlHWcnzRcw3mcQgq0MV+HR41MZd3rIRCWsF4MRoqR6IQFg3k41KlNXSMULFC2sFMHtaqvdQQAarswhltbSCxst+JVmNj13NNQwztYkMwjJXnYVKsnKcnZIM1CHwgASG+0kd5orL76cRAtQhTJ1fSLbgVWnkl8vDaEPFD+3M0yqdWxTGadUScowf5WVvBo9C0RcMaZjawyYBwmrtX+7AfMj6oexQVlg9/QagsOyfnaGwNmpUygDC+rIvrOX6bRvo9gWluKqvW2eSV9y2ojgtj6YB9Q92/BCvE9zM0Ur6OBRp+DyYQaWbmuZGoEn6i88gzeI4W+qneXEcm7yRmQc97Kv2KtmKSY29oNLY7UTvdSPNrURzDtrXQ7WROU8LF9qvAYSThyoDfYp5kCi5Gc9z7vWnqtFz7veYAzUawFY3KsaZVI0/nhLSztt4A/TRhK1kVTSQY0g8gJMdwhTpbnXvC1EYmfBAFb0TkLsHWKqPNe6Zfzk9zE5++NsB18nyYzqqFf0ocCp/3QUu4rwfP2slPNlF2Z4X3MzK+mpWs+xZQd+nqw+/Vt7FHJzV8Au7tWQq58m+9icq+yGGxj/279IDL9Xh5Qr64+d4DH6gyOKx506OefLBp12bLBi7I2sbfulwR/mFnkabeP6M5MxVFWRMTqiP5XfThj8dkg39+bT5ZOZicfy21CfRtqzfaHeGjgmSMwrZfRbi9evG2+qyZEibufPDsOnk80izIqzjT/wnn1/8K/gDrbg54Fpq2DMAAAAASUVORK5CYII=" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-3 -->
+
+        <div id="navsec3">
+            <a href="./books.html"><button class="navbtn2">Books</button></a>
+            <h4>|</h4>
+            <a href="./fiction.html"><button class="navbtn2">Fiction</button></a>
+            <h4>|</h4>
+            <a href="./nonfiction.html"><button class="navbtn2">Nonfiction</button></a>
+            <h4>|</h4>
+            <a href="./ebooks.html"><button class="navbtn2">eBooks</button></a>
+            <h4>|</h4>
+            <a href="./audiobooks.html"><button class="navbtn2">Audiobooks</button></a>
+            <h4>|</h4>
+            <a href="./teens&ya.html"><button class="navbtn2">Teens & YA</button></a>
+            <h4>|</h4>
+            <a href="./kids.html"><button class="navbtn2">Kids</button></a>
+            <h4>|</h4>
+            <a href="./toys &games.html"><button class="navbtn2">Toys & Games</button></a>
+            <h4>|</h4>
+            <a href="./Stationery & Gifts.html"><button class="navbtn2">Stationery & Gifts</button></a>
+            <h4>|</h4>
+            <a href=""><button class="navbtn2">Music & Movies</button></a>
+        </div>
+
+    </div>
+
+    <!-----------------Cart section----------------->
+    <div class="carttotal">
+        <h2>BAG TOTAL: Rs. &nbsp;<span class="total">0</span></h2>
+    </div>
+    <div id="buynow">
+        <a href="checkout.html"><button id="buynowbtn">BUY NOW</button></a>
+    </div>
+    <div class="cart-empty">
+        <img alt="Cart empty" src="https://www.seekpng.com/png/full/117-1170538_404-your-cart-is-empty.png" />
+    </div>
+    <div class="cartcont">
+        <!-- append cartdata -->
+    </div>
+
+    <!------------------- Help section ------------------->
+   
+</body>
+
+</html>
+<script src="/index.js"></script>
+<script>
+
+    let cartData = JSON.parse(localStorage.getItem("cart"));
+    displayCart(cartData);
+    totalCost(cartData);
+
+    let cart_empty = document.querySelector(".cart-empty");
+    if (cartData.length != 0) {
+        cart_empty.classList.add("hide-div");
+    } else {
+        cart_empty.classList.remove("hide-div");
+    }
+
+    function displayCart(data) {
+        document.querySelector(".cartcont").innerHTML = "";
+        data.forEach((elem, index) => {
+            let maindiv = document.createElement("div");
+            let leftdiv = document.createElement("div");
+            let rightdiv = document.createElement("div");
+
+            let pic = document.createElement("img");
+            pic.setAttribute("src", elem.avatar);
+            let title = document.createElement("h2")
+            title.innerText = elem.title;
+            let qty = document.createElement("p");
+            qty.innerText = "Qty: " + elem.qty;
+            let rating = document.createElement("p");
+            rating.innerText = "Rating: " + elem.rating;
+            let price = document.createElement("h2");
+            price.innerText = "Rs: " + elem.price;
+
+            let calcdiv = document.createElement("div");
+            let plus = document.createElement("button");
+            plus.innerText = "+";
+            plus.addEventListener("click", function () {
+                span.innerText++;
+                totalCost(cartData);
+            })
+
+            let span = document.createElement("span");
+            span.setAttribute("class", "qty");
+            span.innerText = 1;
+
+            let minus = document.createElement("button");
+            minus.innerText = "-";
+            minus.addEventListener("click", function () {
+                if (span.innerText >= 1) {
+                    span.innerText--;
+                }
+                totalCost(cartData);
+            })
+
+            let del = document.createElement("button");
+            del.innerText = "REMOVE ITEM";
+            del.addEventListener("click", function () {
+                deleteData(cartData, index);
+            })
+
+            calcdiv.append(minus, span, plus);
+            rightdiv.append(title, qty, rating, price, calcdiv, del);
+            leftdiv.append(pic);
+            maindiv.append(leftdiv, rightdiv)
+            document.querySelector(".cartcont").append(maindiv);
+        })
+    }
+
+    function totalCost(arr) {
+        let qty = document.querySelectorAll(".qty");
+        let sum = 0;
+        for (let i = 0; i <= qty.length - 1; i++) {
+            if (arr.length == 0) {
+                sum = 0;
+            } else {
+                sum = sum + (Number(qty[i].innerText) * arr[i].price);
+            }
+        }
+
+        document.querySelector(".total").innerText = sum;
+    }
+
+    function deleteData(array, index) {
+        array.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(array));
+        displayCart(array);
+        totalCost(cartData);
+    }
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+<body>
+    <div id="admincontainer">
+        <div id="books">
+            <a href="index.html"><img id="logoimg"src="https://dl.dropboxusercontent.com/s/ib9xpbeh5p8hnpx/book%20store%20logo11.png?dl=0" alt="BOOKSTORE.COM"></a>
+        </div>
+        <div id="wlcmadmin">
+            <h1>ADMIN - PAGE</h1>
+        </div>
+        <div id="adminnav">
+            <a href="admin.html"><button class="navbutn">PRODUCT</button></a>
+            <a href="dashboard.html"><button class="navbutn">DASHBOARD</button></a>
+            <a href="customer.html"><button class="navbutn">CUSTOMER</button></a>
+            <a href="order.html"><button class="navbutn">ORDER</button></a>
+            <a href="setting.html"><button class="navbutn">SETTING</button></a>
+            <a href="index.html"><button class="logoutbtn">LOGOUT</button></a>
+        </div>
+        <div id="addprod">
+            <div>
+                <h2>Add New Product</h2>
+            </div>
+            <div class="addprodchild">
+               <h4>Image Link</h4>
+               <input id="input1"type="text" placeholder="Image Link">
+            </div>
+            <div class="addprodchild">
+                <h4>Title</h4>
+                <input id="input2"type="text" placeholder="Title">
+             </div>
+             <div class="addprodchild">
+                <h4>Author Name</h4>
+                <input id="input3" type="text" placeholder="Author Name">
+             </div>
+             <div class="addprodchild">
+                <h4>Price</h4>
+                <input id="input4" type="text" placeholder="Price">
+             </div>
+             <div class="addprodchild">
+                <h4>Rating</h4>
+                <input id="input5" type="text" placeholder="Rating">
+             </div>
+             <div>
+                <button onclick="getalert()"id="addprodbtn">ADD PRODUCT</button>
+             </div>
+        </div>
+        <div id="right-div">
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="/frontend/js/admin.js"></script>
